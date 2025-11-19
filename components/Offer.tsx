@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Reveal } from './ui/Reveal';
-import { Check, ShieldCheck, ArrowRight, Sparkles, FileText, Crown } from 'lucide-react';
+import { Check, ShieldCheck, ArrowRight, FileText, Crown } from 'lucide-react';
 
 export const Offer: React.FC = () => {
   return (

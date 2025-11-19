@@ -5,7 +5,9 @@ import { Hero } from './components/Hero';
 import { Truth } from './components/Truth';
 import { ColdChain } from './components/ColdChain';
 import { Science } from './components/Science';
+import { Comparison } from './components/Comparison';
 import { Ritual } from './components/Ritual';
+import { Reviews } from './components/Reviews';
 import { Manifesto } from './components/Manifesto';
 import { Offer } from './components/Offer';
 import { FAQ } from './components/FAQ';
@@ -40,9 +42,11 @@ const App: React.FC = () => {
             <Hero />
             <Truth />
             <ColdChain />
+            <Comparison />
             <Manifesto />
             <Science onNavigate={(page) => setCurrentPage(page)} />
             <Ritual />
+            <Reviews />
             <Offer />
             <FAQ />
           </>
