@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Reveal } from './ui/Reveal';
 import { motion } from 'framer-motion';
@@ -8,16 +9,18 @@ export const Truth: React.FC = () => {
       <div className="max-w-5xl mx-auto px-6 relative z-10">
         <div className="grid md:grid-cols-2 gap-20 items-center">
           <Reveal>
-            <span className="text-amber-glow text-xs font-bold uppercase tracking-widest mb-4 block">The Industry Secret</span>
+            <span className="text-amber-glow text-xs font-bold uppercase tracking-widest mb-4 block">The Industry Failure</span>
             <h2 className="font-serif text-4xl md:text-5xl mb-6 leading-tight text-river-teal">
-              The only supplement <br />
-              that can <span className="italic text-gray-400">age you faster.</span>
+              Most supplements <br />
+              are <span className="italic text-gray-400">decaying</span> before you open them.
             </h2>
             <p className="text-gray-500 text-lg leading-relaxed mb-6">
               Break a capsule of your current fish oil. <strong>Does it smell like fish?</strong>
             </p>
             <p className="text-gray-500 font-light mb-8 leading-relaxed">
-              That isn't flavor. That is <strong className="text-river-teal">rancidity</strong>. When Omega-3s oxidize, they become inflammatory free radicals. Most brands sit in hot warehouses for months before they reach you. You are paying to ingest toxins.
+              That isn't flavor. That is <strong className="text-river-teal">rancidity (oxidation)</strong>. When Omega-3s oxidize, they transform into lipid peroxides—free radicals that <strong>accelerate cellular aging</strong> and inflammation.
+              <br/><br/>
+              Standard retail brands sit in hot warehouses for months. You are paying to ingest metabolic stress. River is the antidote: nitrogen-flushed and harvested on-demand.
             </p>
             <div className="p-6 bg-river-mist rounded-xl border-l-2 border-river-teal">
               <p className="text-sm text-river-teal font-medium italic">
@@ -36,14 +39,14 @@ export const Truth: React.FC = () => {
               <div>
                 <div className="flex justify-between text-[10px] uppercase tracking-widest mb-2 text-gray-500">
                   <span>Standard Retail</span>
-                  <span>Score: 26 (Rancid)</span>
+                  <span>Score: 26 (High Oxidation)</span>
                 </div>
                 <div className="w-full h-3 bg-white rounded-full overflow-hidden">
                   <motion.div 
                     initial={{ width: 0 }}
                     whileInView={{ width: "85%" }}
                     transition={{ duration: 1.5, ease: "easeOut" }}
-                    className="h-full bg-gray-300"
+                    className="h-full bg-red-400/50"
                   ></motion.div>
                 </div>
               </div>
@@ -76,6 +79,9 @@ export const Truth: React.FC = () => {
                 </div>
               </div>
             </div>
+            <p className="text-[10px] text-gray-400 mt-8 text-center leading-relaxed">
+                *TOTOX (Total Oxidation) measures the freshness of oil. Scores above 26 are considered highly oxidized and pro-inflammatory.
+            </p>
           </Reveal>
         </div>
       </div>

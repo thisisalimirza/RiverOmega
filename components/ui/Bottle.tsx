@@ -1,15 +1,16 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 
 export const Bottle: React.FC = () => {
   return (
-    <div className="relative h-[600px] flex items-center justify-center">
-      {/* Bottle Container */}
+    <div className="relative h-[450px] md:h-[600px] w-full flex items-center justify-center touch-none select-none">
+      {/* Bottle Container - Scaled down on mobile */}
       <motion.div 
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 }}
-        className="relative w-64 h-[400px] bg-gradient-to-b from-white/60 to-white/20 backdrop-blur-md border border-white/50 rounded-[3rem] shadow-2xl flex items-center justify-center overflow-hidden z-10 hover:scale-105 transition-transform duration-[1.5s] ease-out"
+        className="relative w-56 md:w-64 h-[350px] md:h-[400px] bg-gradient-to-b from-white/60 to-white/20 backdrop-blur-md border border-white/50 rounded-[2.5rem] md:rounded-[3rem] shadow-2xl flex items-center justify-center overflow-hidden z-10 hover:scale-105 transition-transform duration-[1.5s] ease-out scale-90 md:scale-100"
       >
         
         {/* The Liquid (Amber Gradient) */}
@@ -37,7 +38,7 @@ export const Bottle: React.FC = () => {
       </motion.div>
       
       {/* Shadow */}
-      <div className="absolute -bottom-16 w-48 h-16 bg-river-teal/10 blur-2xl rounded-[100%]"></div>
+      <div className="absolute bottom-0 md:-bottom-16 w-40 md:w-48 h-16 bg-river-teal/10 blur-2xl rounded-[100%]"></div>
     </div>
   );
 };

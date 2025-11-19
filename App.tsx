@@ -6,7 +6,9 @@ import { Truth } from './components/Truth';
 import { ColdChain } from './components/ColdChain';
 import { Science } from './components/Science';
 import { Ritual } from './components/Ritual';
+import { Manifesto } from './components/Manifesto';
 import { Offer } from './components/Offer';
+import { FAQ } from './components/FAQ';
 import { Footer } from './components/Footer';
 import { Cart } from './components/Cart';
 import { CardioPage } from './components/pages/CardioPage';
@@ -38,9 +40,11 @@ const App: React.FC = () => {
             <Hero />
             <Truth />
             <ColdChain />
+            <Manifesto />
             <Science onNavigate={(page) => setCurrentPage(page)} />
             <Ritual />
             <Offer />
+            <FAQ />
           </>
         )}
         {currentPage === 'cardio' && <CardioPage onBack={() => setCurrentPage('home')} />}
