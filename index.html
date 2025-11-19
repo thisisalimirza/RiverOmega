@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIVER | The Architecture of Time</title>
+    <meta name="description" content="The world's first fresh-catch, nitrogen-flushed marine lipid complex. Designed for longevity.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Tenor+Sans&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'river-teal': '#0F2C35',
+                        'river-surface': '#1A3E4A',
+                        'river-mist': '#F5F7F7',
+                        'amber-glow': '#E67E22',
+                        'amber-light': '#F39C12',
+                    },
+                    fontFamily: {
+                        sans: ['"Space Grotesk"', 'sans-serif'], 
+                        serif: ['"Tenor Sans"', 'sans-serif'],   
+                    },
+                    boxShadow: {
+                        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.07)',
+                        'glow': '0 0 20px rgba(230, 126, 34, 0.3)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #E8ECEC; }
+        ::-webkit-scrollbar-thumb { background: #0F2C35; border-radius: 10px; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+</head>
+<body class="bg-[#F5F7F7] text-[#0F2C35] antialiased selection:bg-[#E67E22] selection:text-white overflow-x-hidden">
+    <div id="root"></div>
+</body>
+</html>
